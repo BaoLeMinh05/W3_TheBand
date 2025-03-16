@@ -21,6 +21,56 @@ html {
 4. Kiểu dáng
 */
 
+/* COMMON */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.column-3 {
+    width: 33.33333%;
+}
+
+.column-2 {
+    width: 50%;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+/* MAIN */
 #main {
 
 }
@@ -140,7 +190,7 @@ html {
 #content {
     
 }
-
+/* ABOUT SECTION */
 #content .content-section {
     margin: 0px auto;
     padding: 64px 0px;
@@ -174,12 +224,6 @@ html {
     padding: 32px 0px;
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-img {
     width: 154px;
     border-radius: 4px;
@@ -189,7 +233,151 @@ html {
     margin: 15px 0px;
     font-size: 15px;
 }
+/* TOUR SECTION */
+.tour-section {
+    background-color: #000;
+}
+/* Tickets */
+.tickets-list {
+    margin-top: 40px;
+    list-style-type: none;
+    background-color: #fff;
+}
 
+.tickets-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: #757575;
+}
+
+.tickets-list .sold-out {
+    margin-left: 8px;
+    padding: 2px 6px;
+    color: #fff;
+    background-color: #f44336;
+}
+
+.tickets-list .quantity {
+    float: right;
+    /* Nhờ có float mới margin âm được */
+    margin-top: -2px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+}
+/* Places */
+.place-list {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.place-img {
+    display: block;
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.place-heading {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin: 15px 0px;
+    color: #757575;
+}
+
+.place-description {
+    margin: 15px 0px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+/* CONTACT SECTION */
+.contact-content {
+    padding: 32px 0px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info .contact-icon {
+    width: 28px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form .form-submit-btn {
+    float: right;
+    border: none;
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* MAP */
+.map img {
+    display: block;
+    width: 100%;
+}
+
+/* FOOTER */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer p {
+    margin-bottom: 15px;
+}
+
+#footer p i {
+    font-size: 30px;
+}
+
+#footer p i:hover {
+    opacity: 0.5;
 }
